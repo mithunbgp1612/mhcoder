@@ -1,12 +1,25 @@
-import React from 'react'
-import './Banner.css';
+import React from "react";
+import "./Banner.css";
 
 export default function BannerTop() {
   return (
-    <div class="top-banner">
-      <div class="container">
-        <div class="small-bold-text banner-text"><marquee behavior="" direction="">🥳 Welcome to mhcoder.com</marquee></div>
+    <div className="top-banner">
+      <div className="container">
+        <div className="banner-content">
+          <span className="banner-icon">🚀</span>
+
+          <div className="banner-text-wrapper">
+            <div className="banner-text">
+              Welcome to MHCoder.com — Learn Java, Spring Boot,
+              React, MySQL & Full Stack Development
+            </div>
+          </div>
+
+          <span className="banner-badge">
+            Start Learning →
+          </span>
+        </div>
       </div>
     </div>
-  )
+  );
 }

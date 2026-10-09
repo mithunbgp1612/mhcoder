@@ -1,55 +1,326 @@
-import React from 'react';
+
+import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="text-center text-lg-start text-white py-4" style={{ background: '#000000' }}>
+    <footer
+      style={{
+        background: "#111827",
+        color: "#d1d5db",
+        paddingTop: "50px",
+      }}
+    >
       <div className="container">
+
         <div className="row">
-          {/* About Section */}
-          <div className="col-md-4 col-sm-12 mb-4">
-            <h5>About Us</h5>
-            <p>
-              MHCode is a platform dedicated to providing high-quality programming tutorials, projects, and IT jobs-related coding resources. Join us to enhance your skills.
+
+          {/* ================= ABOUT ================= */}
+          <div className="col-lg-4 col-md-6 mb-4">
+
+            <h4
+              style={{
+                color: "#22f8d1",
+                fontWeight: "700",
+                marginBottom: "15px",
+              }}
+            >
+              MHCoder<span style={{ color: "#fff" }}>.com</span>
+            </h4>
+
+            <p
+              style={{
+                lineHeight: "1.8",
+                fontSize: "14px",
+              }}
+            >
+              MHCoder is an educational platform where you can learn
+              Java, Spring Boot, MySQL, React and Full Stack Development
+              through simple tutorials, practical projects and interview
+              preparation.
             </p>
+
+            <p
+              style={{
+                color: "#9ca3af",
+                fontSize: "14px",
+              }}
+            >
+              Learn • Practice • Build • Grow
+            </p>
+
           </div>
 
-          {/* Quick Links Section */}
-          <div className="col-md-4 col-sm-12 mb-4">
-            <h5>Quick Links</h5>
-            <ul className="list-unstyled">
-              <li><a href="#home" className="text-light">Home</a></li>
-              <li><a href="#services" className="text-light">Services</a></li>
-              <li><a href="#projects" className="text-light">Projects</a></li>
-              <li><a href="#contact" className="text-light">Contact</a></li>
+          {/* ================= LEARNING ================= */}
+          <div className="col-lg-2 col-md-6 mb-4">
+
+            <h5
+              style={{
+                color: "#fff",
+                fontWeight: "600",
+                marginBottom: "18px",
+              }}
+            >
+              Learning
+            </h5>
+
+            <ul
+              className="list-unstyled"
+              style={{ lineHeight: "2" }}
+            >
+              <li>
+                <a href="/#courses" className="footer-link">
+                  Courses
+                </a>
+              </li>
+
+              <li>
+                <a href="/#roadmap" className="footer-link">
+                  Roadmap
+                </a>
+              </li>
+
+              <li>
+                <a href="/#tutorials" className="footer-link">
+                  Tutorials
+                </a>
+              </li>
+
+              <li>
+                <a href="/#projects" className="footer-link">
+                  Projects
+                </a>
+              </li>
             </ul>
+
           </div>
 
-          {/* Contact Section */}
-          <div className="col-md-4 col-sm-12 mb-4">
-            <h5>Contact Us</h5>
-            <p>Email: contact@mhcode.com</p>
-            <p>Phone: +91 7903047131, 9473176939</p>
-            <p>Address: Tilka Manjhi, Bhagalpur, VRMS Complex, 812002</p>
+          {/* ================= CAREER ================= */}
+          <div className="col-lg-3 col-md-6 mb-4">
+
+            <h5
+              style={{
+                color: "#fff",
+                fontWeight: "600",
+                marginBottom: "18px",
+              }}
+            >
+              Career
+            </h5>
+
+            <ul
+              className="list-unstyled"
+              style={{ lineHeight: "2" }}
+            >
+
+              <li>
+                <a href="/#interview" className="footer-link">
+                  Interview Preparation
+                </a>
+              </li>
+
+              <li>
+                <a href="/#projects" className="footer-link">
+                  Practical Projects
+                </a>
+              </li>
+
+              <li>
+                <a href="/#courses" className="footer-link">
+                  Java Full Stack
+                </a>
+              </li>
+
+              <li>
+                <a href="/contact" className="footer-link">
+                  Contact Us
+                </a>
+              </li>
+
+            </ul>
+
           </div>
+
+          {/* ================= CONTACT ================= */}
+          <div className="col-lg-3 col-md-6 mb-4">
+
+            <h5
+              style={{
+                color: "#fff",
+                fontWeight: "600",
+                marginBottom: "18px",
+              }}
+            >
+              Contact
+            </h5>
+
+            <p style={{ fontSize: "14px" }}>
+              <strong>Email:</strong>
+              <br />
+              contact@mhcoder.com
+            </p>
+
+            <p style={{ fontSize: "14px" }}>
+              <strong>Phone:</strong>
+              <br />
+              +91 7903047131
+              <br />
+              +91 9473176939
+            </p>
+
+            <p style={{ fontSize: "14px" }}>
+              <strong>Location:</strong>
+              <br />
+              Tilka Manjhi, Bhagalpur
+              <br />
+              Bihar, India
+            </p>
+
+          </div>
+
         </div>
 
-        {/* Social Media Icons */}
-        <div className="row mt-3">
-          <div className="col text-center">
-            <a href="https://facebook.com" className="text-light me-3"><i className="fab fa-facebook fa-2x"></i></a>
-            <a href="https://twitter.com" className="text-light me-3"><i className="fab fa-twitter fa-2x"></i></a>
-            <a href="https://linkedin.com" className="text-light me-3"><i className="fab fa-linkedin fa-2x"></i></a>
-            <a href="https://github.com" className="text-light me-3"><i className="fab fa-github fa-2x"></i></a>
-          </div>
+        {/* ================= SOCIAL MEDIA ================= */}
+        <div
+          className="text-center"
+          style={{
+            borderTop: "1px solid #374151",
+            paddingTop: "25px",
+            marginTop: "10px",
+          }}
+        >
+
+          <p
+            style={{
+              color: "#fff",
+              marginBottom: "15px",
+              fontWeight: "500",
+            }}
+          >
+            Follow MHCoder
+          </p>
+
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noreferrer"
+            className="social-link"
+          >
+            <i className="fab fa-facebook-f"></i>
+          </a>
+
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noreferrer"
+            className="social-link"
+          >
+            <i className="fab fa-twitter"></i>
+          </a>
+
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noreferrer"
+            className="social-link"
+          >
+            <i className="fab fa-linkedin-in"></i>
+          </a>
+
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noreferrer"
+            className="social-link"
+          >
+            <i className="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://youtube.com"
+            target="_blank"
+            rel="noreferrer"
+            className="social-link"
+          >
+            <i className="fab fa-youtube"></i>
+          </a>
+
         </div>
 
-        {/* Copyright Section */}
-        <div className="row mt-3">
-          <div className="col text-center">
-            <p>&copy; 2024 MHCode. All Rights Reserved.</p>
-          </div>
+        {/* ================= COPYRIGHT ================= */}
+        <div
+          className="text-center"
+          style={{
+            borderTop: "1px solid #374151",
+            marginTop: "25px",
+            padding: "20px 0",
+          }}
+        >
+
+          <p
+            style={{
+              margin: 0,
+              fontSize: "14px",
+              color: "#9ca3af",
+            }}
+          >
+            © {new Date().getFullYear()}{" "}
+            <span style={{ color: "#22f8d1" }}>
+              MHCoder.com
+            </span>
+            . All Rights Reserved.
+          </p>
+
+          <p
+            style={{
+              margin: "5px 0 0",
+              fontSize: "13px",
+              color: "#6b7280",
+            }}
+          >
+            Learn Programming • Build Projects • Grow Your Career
+          </p>
+
         </div>
+
       </div>
+
+      {/* ================= FOOTER CSS ================= */}
+      <style>
+        {`
+          .footer-link {
+            color: #9ca3af;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+          }
+
+          .footer-link:hover {
+            color: #22f8d1;
+            padding-left: 4px;
+          }
+
+          .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border: 1px solid #374151;
+            border-radius: 50%;
+            color: #d1d5db;
+            margin: 0 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+          }
+
+          .social-link:hover {
+            color: #111827;
+            background: #22f8d1;
+            border-color: #22f8d1;
+            transform: translateY(-3px);
+          }
+        `}
+      </style>
     </footer>
   );
 }
